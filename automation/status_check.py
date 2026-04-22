@@ -26,13 +26,14 @@ result_nodes = [
     ("Twitter",   "✅ Twitter Result"),
     ("Facebook",  "✅ Facebook Result"),
     ("Instagram", "✅ Instagram Result"),
+    ("GitHub",    "✅ GitHub Result"),
 ]
 
 for name, nid in result_nodes:
     r = get_last(nid)
     if r:
         status = r.get("status", "?")
-        emoji = "✅" if status == "published" else "❌"
+        emoji = {"published": "✅", "skipped": "⏭", "failed": "❌"}.get(status, "❓")
         print(f"  {emoji} {name}: {status}")
         if r.get("url"):   print(f"      → {r['url']}")
         if r.get("error"): print(f"      ! {str(r['error'])[:160]}")
