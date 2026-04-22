@@ -1,0 +1,36 @@
+{
+  "_comment": "Copy this file to /opt/autopilot/.creds.json on the VM, chmod 600, fill in real values. NEVER commit the real .creds.json to git.",
+
+  "N8N_API_KEY": "Generate in n8n Settings -> API -> Create API key",
+
+  "VM_PUBLIC_IP": "YOUR.VM.PUBLIC.IP",
+  "PUBLIC_DOMAIN": "YOUR-VM-IP-DASHED.sslip.io",
+
+  "NEWSDATA": "pub_... (from newsdata.io)",
+  "SERPAPI": "optional, from serpapi.com",
+
+  "GEMINI": "AIza... (Google AI Studio API key with Gemini + Imagen access)",
+
+  "DEVTO": "from dev.to/settings/extensions",
+  "HN_TOKEN": "from hashnode.com/settings/developer",
+  "HN_PUB": "your Hashnode publication id (24 chars)",
+
+  "TW_CK": "Twitter API Consumer Key",
+  "TW_CS": "Twitter API Consumer Secret",
+  "TW_AT": "Twitter Access Token",
+  "TW_AS": "Twitter Access Token Secret",
+
+  "FB_ID": "Facebook Page ID (numeric)",
+  "FB_TK": "Facebook Page long-lived access token",
+
+  "IG_ID": "Instagram Business Account ID",
+  "IG_TK": "Instagram Graph API access token",
+
+  "WA_TK": "WhatsApp Business Cloud API token",
+  "WA_PH": "WhatsApp Phone Number ID",
+  "WA_NUM": "Destination phone number (E.164, no +)",
+
+  "GH_TOKEN": "optional, GitHub PAT with 'repo' scope for daily-notes auto-commits",
+  "GH_OWNER": "your-github-username",
+  "GH_REPO": "daily-tech-notes"
+}
